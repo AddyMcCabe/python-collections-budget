@@ -1,5 +1,5 @@
+import collections
 from . import Expense
-from . import collections
 
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
