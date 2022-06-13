@@ -1,3 +1,7 @@
+from . import Expense
+expenses = Expense.Expenses()
+expenses.read_expenses('data/spending_data.csv')
+
 class BudgetList:
     def __init__(self, budget):
         self.budget = budget
@@ -16,3 +20,6 @@ class BudgetList:
 
     def __len__(self):
         return len(self.expenses) + len(self.overages)
+
+def main():
+    myBudgetList = BudgetList(1200)
